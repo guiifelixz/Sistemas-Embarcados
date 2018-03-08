@@ -1,0 +1,22 @@
+1- O que são sistemas embarcados?
+R- O sistema embarcado, também chamado de sistema embutido, é um sistema microprocessado em que um computador está anexado ao sistema 
+que ele controla.
+
+2 - O que são sistemas microprocesssados?
+R- São sitemas que contam com memória, processador, interface de entrada e saída e que desempenham uma tarefa específica automaticamente.
+
+3 -Apresente aplicações de sistemas embarcados: 
+(a) Para a indústria automotiva; 
+Acionamento do airbag, no caso de colisão do carro é acionado um comando no seu sistema interno para inflar o air-bag.
+(b) Para eletrodomésticos; 
+Forno de microondas, ao pressionar uma tecla como pipoca, um sistema interno deve saber ajustar a potência correta, selecionar e medir o tempo em que o forno deve ficar acionado e emitir um sinal quando a tarefa for concluída
+(c) Para automação industrial.
+Acionamentos Elétricos a partir do Soft-Start, que uma de suas funções é dar a partida do motor suavemente.
+
+4 - Cite arquiteturas possíveis e as diferenças entre elas.
+R- Risc e Cisc. Risc possui tipos de dados com pouca variedade, formato das instruções com poucos endereços, acesso aos dados via registradores.
+Ja na arquitetura Cisc possui tipo de dados com muita variedade, formato das instruções com muitos endereços e acesso de dados via memória.
+
+
+5 - Por que usamos o Raspberry Pi na disciplina, ao invés de outro system-on-chip?
+R- Pois utilizaremos o sistema operacional do Linux, programando em C
