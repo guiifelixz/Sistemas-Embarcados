@@ -1,0 +1,64 @@
+1. Por que o Linux recebeu esse nome?
+
+
+R - O nome Linux surgiu da mistura de Linus + Unix. Linus é o nome do criador do Linux, Linus Torvalds. E Unix, é o nome de um sistema operacional.
+2. O que são daemons?
+
+
+R- Outro tipo de usuário do Linux
+3. O que é o shell?
+
+
+R- Interface gráfica ente o usuário e o Linux (Terminal)
+4. Por que é importante evitar executar o terminal como super-usuário?
+
+
+R -Pois os arquivos importantes poderão ser movidos ou editados de forma equivocada.
+5. Qual botão do teclado completa o que o usuário escreve no terminal, de acordo com o contexto?
+
+
+R- Tab
+6. Quais botões do teclado apresentam instruções escritas anteriormente?
+R-Seta para cima
+
+7. Apresente os respectivos comandos no terminal para:
+  (a) Obter mais informações sobre um comando.
+  R - man ou help
+(b) Apresentar uma lista com os arquivos dentro de uma pasta.
+ R - ls 
+(c) Apresentar o caminho completo da pasta.
+  R-pwd
+(d) Trocar de pasta.
+  R- cd
+(e) Criar uma pasta.
+  R- mkdir
+(f) Apagar arquivos definitivamente.
+  R- rm
+(g) Apagar pastas definitivamente.
+  R - rm
+(h) Copiar arquivos.
+  R - cp
+(i) Copiar pastas.
+  R - cp
+(j) Mover arquivos.
+  R - mv
+(k) Mover pastas.
+  R - mv  
+(l) Renomear pastas.
+  R - mv
+(m) Apresentar o conteúdo de um arquivo.
+ R - cat 
+(n) Apresentar o tipo de um arquivo.
+  
+(o) Limpar a tela do terminal.
+  R - clear
+(p) Encontrar ocorrências de palavras-chave em um arquivo-texto.
+  
+(q) Ordenar informações em um arquivo-texto.
+  
+(r) Substituir ocorrências de palavras-chave em um arquivo-texto.
+  
+(s) Conferir se dois arquivos são iguais.
+  
+(t) Escrever algo na tela.
+ R - echo
