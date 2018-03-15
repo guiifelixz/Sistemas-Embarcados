@@ -35,30 +35,30 @@ R-Seta para cima
 (f) Apagar arquivos definitivamente.
   R- rm
 (g) Apagar pastas definitivamente.
-  R - rm
+  R - rm -r
 (h) Copiar arquivos.
   R - cp
 (i) Copiar pastas.
-  R - cp
+  R - cp -r
 (j) Mover arquivos.
   R - mv
 (k) Mover pastas.
-  R - mv  
+  R - mv  -f
 (l) Renomear pastas.
   R - mv
 (m) Apresentar o conteúdo de um arquivo.
  R - cat 
 (n) Apresentar o tipo de um arquivo.
-  
+  R - file
 (o) Limpar a tela do terminal.
   R - clear
 (p) Encontrar ocorrências de palavras-chave em um arquivo-texto.
-  
+R- grep -n
 (q) Ordenar informações em um arquivo-texto.
-  
+   R- sort
 (r) Substituir ocorrências de palavras-chave em um arquivo-texto.
-  
+  R - sed
 (s) Conferir se dois arquivos são iguais.
-  
+  R- diff
 (t) Escrever algo na tela.
  R - echo
