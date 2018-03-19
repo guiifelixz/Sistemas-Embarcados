@@ -4,7 +4,7 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
 1. Crie um "Olá mundo!" em C.
 
 
-R - O código está na pasta Código_Questões, arquivo felix.c
+R - O código está nesta pasta, arquivo felix.c
 
 2. Crie um código em C que pergunta ao usuário o seu nome, e imprime no terminal "Ola " e o nome do usuário. Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_1':
 
@@ -16,7 +16,7 @@ $ Ola Eu
 
 
 
-R - O código está na pasta Código_Questões, aula_2_quest_3.c
+R - O código está nesta pasta, aula_3_quest_2.c
 
 3. Apresente os comportamentos do código anterior nos seguintes casos:
 
