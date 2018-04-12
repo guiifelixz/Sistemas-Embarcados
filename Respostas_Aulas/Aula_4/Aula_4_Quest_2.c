@@ -4,8 +4,8 @@ int main(){
 
 FILE *fp;
 int idade;
-char nomea[15];
-char nome[15];
+char n1[30];
+char nome[30];
 
 printf("Digite seu nome:");
 scanf("%s", nome);
@@ -14,7 +14,7 @@ scanf("%d", &idade);
 
  sprintf(nomea, "%s.txt", nome);
 
-    fp = fopen (nomea, "w");
+    fp = fopen (n1, "w");
     if (fp == NULL) {
        printf ("ERRO.\n");
        return 0;
