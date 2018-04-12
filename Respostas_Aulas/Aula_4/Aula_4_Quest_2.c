@@ -1,30 +1,28 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
 
-	int main(int argc, char *argv){
-		
-		FILE *fp;
-		int idade;
-		char nome[100];
-		fp = fopen("Olá_usuário1.txt","w");
-		
-		if(!fp){
-			printf("Erro ao abrir o arquivo\n");
-			exit(0);
-				}
-				
-			scanf("Digite o seu nome : %s", &nome);	
-			scanf("Digite sua idade : %d", &idade);	
-			fputs("Nome : %s, Idade : %d", nome, idade, fp);
-			//ou fputs(fp,"Nome : %s, Idade : %d", nome, idade);
-			
-			
-			fprintf(fp,"Nome: %s\n",nome);
-			fprintf(fp,"Idade: %d\n",idade);
+int main(){
 
-			fclose(fp);
-		return 0;
-		
-		
-	}
+FILE *fp;
+int idade;
+char nomea[15];
+char nome[15];
+
+printf("Digite seu nome:");
+scanf("%s", nome);
+printf("Digite sua idade:");
+scanf("%d", &idade);
+
+ sprintf(nomea, "%s.txt", nome);
+
+    fp = fopen (nomea, "w");
+    if (fp == NULL) {
+       printf ("ERRO.\n");
+       return 0;
+    }
+
+fprintf(fp,"Nome: %s \nIdade: %d anos\n", nome, idade);
+
+fclose(fp);
+return 0;
+}
 	
