@@ -12,7 +12,7 @@ scanf("%s", nome);
 printf("Digite sua idade:");
 scanf("%d", &idade);
 
- sprintf(nomea, "%s.txt", nome);
+ sprintf(n1, "%s.txt", nome);
 
     fp = fopen (n1, "w");
     if (fp == NULL) {
