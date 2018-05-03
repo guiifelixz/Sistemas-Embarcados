@@ -7,7 +7,7 @@ int main(int argc, char **argv)
 	// Set up gpi pointer for direct register access
 	setup_io();
 	INP_GPIO(4);
-	puts("Pressione o botao");
-	while(GET_GPIO(4));
+	puts("Pressione o botao");// escreve na tela
+	while(GET_GPIO(4));// retorna 1
 	return 0;
 }
