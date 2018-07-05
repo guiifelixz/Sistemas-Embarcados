@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Right Sidebar - Escape Velocity by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body class="right-sidebar">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper" class="wrapper">
+					<div id="header">
+
+						<!-- Logo -->
+							<div id="logo">
+								<h1><a href="index.html">Equipe UNBAJA</a></h1>
+								<p></p>
+							</div>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li class="current"><a href="index.html">Home</a></li>
+									<li><a href="mapa.php">Mapa</a></li>
+									<li><a href="gps.html">Dados do GPS</a></li>
+									<li><a href="mpu.html">Dados do acelerômetro e giroscópio</a></li>
+								</ul>
+							</nav>
+
+					</div>
+				</div>
+
+			<!-- Main -->
+
+			<div id="titulo" class="wrapper style1">
+				<div class="title">Dados GPS</div>
+				</div>
+
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+				<div id="map" class="wrapper style2">
+
+					 <button type="button" name="load_data" id="load_data" class="btn btn-info">Load Data</button>
+
+					<script>
+					
+					$(document).ready(function(){
+					$('#load_data').click(function(){
+  					$.ajax({
+ 					  url:"teste.csv",
+ 					  dataType:"text",
+					   success:function(data)
+ 					  {
+ 					   var baja_data = data.split(/\r?\n|\r/);
+ 					   var table_data = '<table class="table table-bordered table-striped">';
+ 					   for(var count = 0; count<baja_data.length; count++)
+ 					   {
+ 					    var cell_data = baja_data[count].split(",");
+ 					    table_data += '<tr>';
+ 					    for(var cell_count=0; cell_count<cell_data.length; cell_count++)
+ 					    {
+ 					     if(count === 0)
+					      {
+					       table_data += '<th>'+cell_data[cell_count]+'</th>';
+ 					     }
+ 					     else
+					      {
+					       table_data += '<td>'+cell_data[cell_count]+'</td>';
+					      }
+					     }
+					     table_data += '</tr>';
+					    }
+					    table_data += '</table>';
+					    $('#map').html(table_data);
+					   }
+					  });
+					 });					
+					});
+
+					</script>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	</body>
+</html>
